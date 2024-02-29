@@ -4,17 +4,17 @@ import java.util.Iterator;
 public class Main {
     public static void main(String[] args) {
         int numberToCheck = 9;
-        HashSet<Integer> myOddNumbers = getIntegerHashSet(10);
-        checkNumberInList(myOddNumbers, numberToCheck);
+        HashSet<Integer> myNumbers = getIntegerHashSet(10);
+        checkNumberInList(myNumbers, numberToCheck);
     }
 
     public static HashSet<Integer> getIntegerHashSet(int maxSize) {
-        HashSet<Integer> oddNumbers = new HashSet<>();
+        HashSet<Integer> numbers = new HashSet<>();
         for (int i = 0; i < maxSize; i++) {
             int j = i + 2;
-            oddNumbers.add(i + j);
+            numbers.add(i + j);
         }
-        return oddNumbers;
+        return numbers;
     }
 
     public static void checkNumberInList(HashSet<Integer> listOfNumbers, int number) {
